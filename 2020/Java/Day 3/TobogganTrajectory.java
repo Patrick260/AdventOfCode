@@ -55,6 +55,8 @@ public class TobogganTrajectory {
 
         }
 
+        scanner.close();
+
         return treeCount;
 
     }
