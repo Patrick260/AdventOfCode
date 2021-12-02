@@ -54,6 +54,8 @@ public class PasswordPhilosophy {
             } catch (IndexOutOfBoundsException exception) {}
         }
 
+        scanner.close();
+
         System.out.println(oldValidPasswordCount + " passwords are valid with the old password policy!");
         System.out.println(newValidPasswordCount + " passwords are valid with the new password policy!");
 
