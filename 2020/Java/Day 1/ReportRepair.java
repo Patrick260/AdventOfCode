@@ -42,9 +42,15 @@ public class ReportRepair {
 
                 }
 
+                scanner3.close();
+
             }
 
+            scanner2.close();
+
         }
+
+        scanner1.close();
 
     }
 
