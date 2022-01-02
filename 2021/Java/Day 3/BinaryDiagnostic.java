@@ -170,6 +170,7 @@ public class BinaryDiagnostic {
         co2Bi = list.get(0);
 
         return Integer.parseInt(oxBi, 2)*Integer.parseInt(co2Bi, 2);
+
     }
     
 }
