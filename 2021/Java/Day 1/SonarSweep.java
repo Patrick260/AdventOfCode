@@ -1,3 +1,8 @@
+/*
+    Copyright (c) 2021 Patrick260
+    Distributed under the terms of the MIT License.
+*/
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
