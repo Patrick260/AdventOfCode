@@ -7,23 +7,23 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class GiantSquid {
+public final class GiantSquid {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(final String[] args) throws FileNotFoundException {
 
-        Scanner scanner = new Scanner(new File("./2021/Java/Day 4/input.txt"));
+        final Scanner scanner = new Scanner(new File("./2021/Java/Day 4/input.txt"));
 
-        ArrayList<String> numbers = new ArrayList<>(List.of(scanner.nextLine().split(",")));
+        final ArrayList<String> numbers = new ArrayList<>(List.of(scanner.nextLine().split(",")));
 
         scanner.nextLine();
 
-        ArrayList<ArrayList<String>> boards = new ArrayList<>();
+        final ArrayList<ArrayList<String>> boards = new ArrayList<>();
         boards.add(new ArrayList<>());
         boards.get(0).add(scanner.nextLine());
 
         while (scanner.hasNextLine()) {
 
-            String input = scanner.nextLine();
+            final String input = scanner.nextLine();
 
             if (!input.equals("")) {
 
@@ -41,19 +41,19 @@ public class GiantSquid {
 
         scanner.close();
 
-        ArrayList<String> seenNumbers = new ArrayList<>();
-        ArrayList<ArrayList<String>> winBoards = new ArrayList<>();
-        ArrayList<Integer> scores = new ArrayList<>();
+        final ArrayList<String> seenNumbers = new ArrayList<>();
+        final ArrayList<ArrayList<String>> winBoards = new ArrayList<>();
+        final ArrayList<Integer> scores = new ArrayList<>();
 
-        for (String number : numbers) {
+        for (final String number : numbers) {
 
             seenNumbers.add(number);
 
-            for (ArrayList<String> board : boards) {
+            for (final ArrayList<String> board : boards) {
 
                 for (int i = 0; i < board.size(); i++) {
 
-                    ArrayList<String> line = new ArrayList<>(List.of(board.get(i).split(" ")));
+                    final ArrayList<String> line = new ArrayList<>(List.of(board.get(i).split(" ")));
 
                     while (line.remove(""));
 
@@ -75,13 +75,13 @@ public class GiantSquid {
 
     }
 
-    public static String checkVerticalLine(ArrayList<String> board, int i) {
+    public static String checkVerticalLine(final ArrayList<String> board, final int i) {
 
         String verticalLine = "";
 
-        for (String line : board) {
+        for (final String line : board) {
 
-            ArrayList<String> list = new ArrayList<>(Arrays.asList(line.split(" ")));
+            final ArrayList<String> list = new ArrayList<>(Arrays.asList(line.split(" ")));
 
             while (list.remove(""));
 
@@ -93,13 +93,13 @@ public class GiantSquid {
 
     }
 
-    public static int calcScore(ArrayList<String> board, ArrayList<String> seenNumbers) {
+    public static int calcScore(final ArrayList<String> board, final ArrayList<String> seenNumbers) {
 
         int score = 0;
 
-        for (String line : board) {
+        for (final String line : board) {
 
-            for (String numberInLine : line.split(" ")) {
+            for (final String numberInLine : line.split(" ")) {
 
                 if (!numberInLine.equals("")) {
 

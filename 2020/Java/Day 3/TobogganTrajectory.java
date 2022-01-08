@@ -8,9 +8,9 @@ import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-public class TobogganTrajectory {
+public final class TobogganTrajectory {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(final String[] args) throws FileNotFoundException {
 
         System.out.println("You would encounter " + calcSlope(1, 1) + " trees on slope 1!");
         System.out.println("You would encounter " + calcSlope(3, 1) + " trees on slope 2!");
@@ -22,9 +22,9 @@ public class TobogganTrajectory {
 
     }
 
-    public static int calcSlope(int right, int down) throws FileNotFoundException {
+    public static int calcSlope(final int right, final int down) throws FileNotFoundException {
 
-        Scanner scanner = new Scanner(new File("./2020/Java/Day 3/input.txt"));
+        final Scanner scanner = new Scanner(new File("./2020/Java/Day 3/input.txt"));
 
         int treeCount = 0;
 

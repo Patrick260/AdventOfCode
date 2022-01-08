@@ -8,9 +8,9 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class BinaryDiagnostic {
+public final class BinaryDiagnostic {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(final String[] args) throws FileNotFoundException {
 
         System.out.println("The power consumption of the submarine is: " + calcPowerConsumption());
 
@@ -25,7 +25,7 @@ public class BinaryDiagnostic {
 
         for (int i = 0; i < 12; i++) {
 
-            Scanner scanner = new Scanner(new File("./2021/Java/Day 3/input.txt"));
+            final Scanner scanner = new Scanner(new File("./2021/Java/Day 3/input.txt"));
 
             int one = 0;
             int zero = 0;
@@ -66,7 +66,8 @@ public class BinaryDiagnostic {
 
     public static int calcLifeSupportRating() throws FileNotFoundException {
 
-        String oxBi, co2Bi;
+        final String oxBi;
+        final String co2Bi;
 
         Scanner scanner = new Scanner(new File("./2021/Java/Day 3/input.txt"));
 
@@ -85,10 +86,10 @@ public class BinaryDiagnostic {
             int one = 0;
             int zero = 0;
 
-            ArrayList<String> oneList = new ArrayList<>();
-            ArrayList<String> zeroList = new ArrayList<>();
+            final ArrayList<String> oneList = new ArrayList<>();
+            final ArrayList<String> zeroList = new ArrayList<>();
 
-            for (String s : list) {
+            for (final String s : list) {
 
                 if (s.charAt(count) == '1') {
 
@@ -139,10 +140,10 @@ public class BinaryDiagnostic {
             int one = 0;
             int zero = 0;
 
-            ArrayList<String> oneList = new ArrayList<>();
-            ArrayList<String> zeroList = new ArrayList<>();
+            final ArrayList<String> oneList = new ArrayList<>();
+            final ArrayList<String> zeroList = new ArrayList<>();
 
-            for (String s : list) {
+            for (final String s : list) {
 
                 if (s.charAt(count) == '1') {
 

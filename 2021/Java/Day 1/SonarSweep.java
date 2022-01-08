@@ -7,9 +7,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class SonarSweep {
+public final class SonarSweep {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(final String[] args) throws FileNotFoundException {
 
         Scanner scanner = new Scanner(new File("./2021/Java/Day 1/input.txt"));
 
@@ -19,7 +19,7 @@ public class SonarSweep {
 
         while (scanner.hasNextInt()) {
 
-            int current = scanner.nextInt();
+            final int current = scanner.nextInt();
 
             if (previous < current) {
 
@@ -49,7 +49,7 @@ public class SonarSweep {
             b = c;
             c = scanner.nextInt();
 
-            int currentSum = a + b + c;
+            final int currentSum = a + b + c;
 
             if (previousSum < currentSum) {
 

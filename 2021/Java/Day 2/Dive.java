@@ -7,11 +7,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Dive {
+public final class Dive {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(final String[] args) throws FileNotFoundException {
 
-        Scanner scanner = new Scanner(new File("./2021/Java/Day 2/input.txt"));
+        final Scanner scanner = new Scanner(new File("./2021/Java/Day 2/input.txt"));
 
         int horizontalPositionWithoutAim = 0;
         int depthWithoutAim = 0;
@@ -22,7 +22,7 @@ public class Dive {
 
         while (scanner.hasNextLine()) {
 
-            String[] parts = scanner.nextLine().split(" ");
+            final String[] parts = scanner.nextLine().split(" ");
 
             if (parts[0].equals("forward")) {
 
