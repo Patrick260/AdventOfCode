@@ -75,6 +75,7 @@ public final class GiantSquid {
 
     }
 
+
     public static String checkVerticalLine(final ArrayList<String> board, final int i) {
 
         String verticalLine = "";

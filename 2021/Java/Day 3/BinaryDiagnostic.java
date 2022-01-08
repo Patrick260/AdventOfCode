@@ -18,6 +18,7 @@ public final class BinaryDiagnostic {
         
     }
 
+
     public static int calcPowerConsumption() throws FileNotFoundException {
 
         String gammaBi = "";

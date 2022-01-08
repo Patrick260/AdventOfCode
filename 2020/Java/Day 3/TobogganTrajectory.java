@@ -22,6 +22,7 @@ public final class TobogganTrajectory {
 
     }
 
+
     public static int calcSlope(final int right, final int down) throws FileNotFoundException {
 
         final Scanner scanner = new Scanner(new File("./2020/Java/Day 3/input.txt"));
