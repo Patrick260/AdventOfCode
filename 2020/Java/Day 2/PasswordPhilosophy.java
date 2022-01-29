@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2021 Patrick260
+    Copyright (c) 2021, 2022 Patrick260
     Distributed under the terms of the MIT License.
 */
 
