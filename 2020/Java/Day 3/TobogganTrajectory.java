@@ -33,7 +33,7 @@ public final class TobogganTrajectory {
 
         while (scanner.hasNextLine()) {
 
-            String input = scanner.nextLine();
+            final String input = scanner.nextLine();
 
             if (input.charAt(pos) == '#') {
 
@@ -55,7 +55,7 @@ public final class TobogganTrajectory {
 
                     scanner.nextLine();
 
-                } catch (NoSuchElementException exception) {}
+                } catch (final NoSuchElementException ignored) {}
 
             }
 
