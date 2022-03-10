@@ -78,7 +78,7 @@ public final class GiantSquid {
 
     public static String checkVerticalLine(final ArrayList<String> board, final int i) {
 
-        String verticalLine = "";
+        final StringBuilder verticalLine = new StringBuilder();
 
         for (final String line : board) {
 
@@ -86,11 +86,11 @@ public final class GiantSquid {
 
             while (list.remove(""));
 
-            verticalLine += list.get(i) + " ";
+            verticalLine.append(list.get(i)).append(" ");
 
         }
 
-        return verticalLine;
+        return verticalLine.toString();
 
     }
 
