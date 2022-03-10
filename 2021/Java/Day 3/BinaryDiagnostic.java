@@ -21,8 +21,8 @@ public final class BinaryDiagnostic {
 
     public static int calcPowerConsumption() throws FileNotFoundException {
 
-        String gammaBi = "";
-        String epsilonBi = "";
+        final StringBuilder gammaBi = new StringBuilder();
+        final StringBuilder epsilonBi = new StringBuilder();
 
         for (int i = 0; i < 12; i++) {
 
@@ -49,19 +49,19 @@ public final class BinaryDiagnostic {
 
             if (one > zero) {
 
-                gammaBi += "1";
-                epsilonBi += "0";
+                gammaBi.append("1");
+                epsilonBi.append("0");
 
             } else {
 
-                gammaBi += "0";
-                epsilonBi += "1";
+                gammaBi.append("0");
+                epsilonBi.append("1");
 
             }
 
         }
 
-        return Integer.parseInt(gammaBi, 2)*Integer.parseInt(epsilonBi, 2);
+        return Integer.parseInt(gammaBi.toString(), 2)*Integer.parseInt(epsilonBi.toString(), 2);
 
     }
 
