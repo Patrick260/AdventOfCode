@@ -56,7 +56,7 @@ public final class PasswordPhilosophy {
 
                 }
 
-            } catch (IndexOutOfBoundsException exception) {}
+            } catch (final IndexOutOfBoundsException ignored) {}
         }
 
         scanner.close();
