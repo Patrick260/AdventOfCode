@@ -50,7 +50,7 @@ public final class PasswordPhilosophy {
 
             try {
 
-                if (password.charAt(min-1) == character.charAt(0) && password.charAt(max-1) != character.charAt(0) || password.charAt(min-1) != character.charAt(0) && password.charAt(max-1) == character.charAt(0)) {
+                if (password.charAt(min - 1) == character.charAt(0) && password.charAt(max - 1) != character.charAt(0) || password.charAt(min - 1) != character.charAt(0) && password.charAt(max - 1) == character.charAt(0)) {
 
                     newValidPasswordCount++;
 
