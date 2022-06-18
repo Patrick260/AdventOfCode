@@ -27,7 +27,7 @@ public final class ReportRepair {
 
                 if (a + b == 2020) {
 
-                    System.out.println("You get if you multiply them together: " + a*b);
+                    System.out.println("You get if you multiply them together: " + a * b);
 
                 }
 
@@ -39,7 +39,7 @@ public final class ReportRepair {
 
                     if (a + b + c == 2020) {
 
-                        System.out.println("The product of the three entries that sum to 2020 is: " + a*b*c);
+                        System.out.println("The product of the three entries that sum to 2020 is: " + a * b * c);
 
                         solved = true;
 
